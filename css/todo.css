@@ -1,0 +1,145 @@
+* {
+	font-family: 'Exo', sans-serif;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	background: url("../images/bckgrnd.jpg");
+}
+
+/* *** CONTAINER *** */
+
+.container {
+  margin: 0 auto;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, .75);
+}
+
+#header {
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+}
+
+
+/* *** TASK TABLE *** */
+#error-message {
+  display: none;
+  width: 330px;
+  margin: -10px auto -15px auto;
+  text-align: center;
+  font-size: 18px;
+  background-color: #d17160;
+  border: 1px solid #a33825;
+}
+
+#list, #list-tasks {
+  width: 330px;
+  margin: 30px auto;
+}
+#list-tasks {
+  display: none;
+}
+#list-row {
+  border: 1px solid white;
+  height: 45px;
+}
+#task-info {
+  width: 264px;
+  font-size: 24px;
+}
+#task-input {
+  width: 264px; 
+  color: white;
+  font-size: 24px;
+}
+input[type="text"] {
+  width: 264px;
+  color: black;
+  background-color: #d1e1f9;
+}
+#add-button {
+  width: 66px;
+  background-color: #d1e1f9;
+  cursor: pointer;
+  box-shadow: 0 0 5px -1px rgba(0,0,0,0.2);
+}
+#add-button>img {
+  margin: 0 auto;
+  height: 43px;
+  display: block;
+}
+#add-button:hover {
+  background-color: #6497ba;
+  box-shadow: 0 0 5px -1px rgba(0,0,0,0.6);
+}
+
+#delete-button {
+  width: 66px;
+  height: 45px;
+  cursor: pointer;
+  background-image:url('../images/delete-image.png');
+  background-repeat: no-repeat;
+  background-position: center; 
+  box-shadow: 0 0 5px -1px rgba(0,0,0,0.2);
+}
+
+#task-checkbox {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+
+/* *** MEDIA QUERIES *** */
+
+/* Desktops */
+@media screen and (min-width: 992px) {
+
+  .container {
+  	width: 800px;
+  }
+  #list, #list-tasks {
+    width: 550px;
+  }
+  #error-message {
+    width: 550px
+  }
+  #task-info {
+    width: 490px;
+  }
+  #task-input {
+    width: 490px; 
+  }
+  input[type="text"] {
+    width: 490px;
+  }
+  #add-button {
+    width: 60px;
+  }
+  #delete-button {
+    background-image: none;
+    width: 60px;
+    cursor: pointer;
+    box-shadow: 0 0 5px -1px rgba(0,0,0,0.2);
+  }
+  
+  #task-input:hover + #delete-button {
+    background-image:url('delete-image.png');
+    background-repeat: no-repeat;
+    background-position: center; 
+    box-shadow: 0 0 5px -1px rgba(0,0,0,0.6);
+  }
+  
+  #delete-button:hover {
+    background-image:url('delete-image.png');
+    background-repeat: no-repeat;
+    background-position: center; 
+    box-shadow: 0 0 5px -1px rgba(0,0,0,0.6);
+  }
+  #task-checkbox {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}

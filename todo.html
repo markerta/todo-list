@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Amanda Markert: Webpage</title>
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	  	<link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+    	<link rel="stylesheet" href="css/todo.css">
+ 	</head>
+	<body>
+     
+     <!-- TODO LIST -->
+     <div class="container">
+       <h1 id="header">To-Do List</h1>
+       <p id="error-message">Please input task</p>
+       <table id="list">
+         <tr id="list-row">
+           <td id="task-info"><input type="text" id="input" placeholder="Enter a task..." autofocus></td>
+           <td id="add-button"><img src="images/add-icon.png"></td>
+         </tr>
+       </table>
+       <table id="list-tasks">
+         <tbody id="temp-cell">
+           <tr>
+             <td id="task-input"></td>
+             <td id="delete-button"></td>
+           </tr>
+         </tbody>
+       </table> 
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+   <script src='js/todo.js'></script>
+  </body>
+</html>
